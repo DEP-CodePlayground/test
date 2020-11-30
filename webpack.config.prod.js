@@ -5,7 +5,8 @@ const superConfig = require('./webpack.config');
 
 module.exports = webpackMerge(superConfig ,{
     output: {
-        filename: 'main.[contenthash].bundle.js'
+        filename: 'main.[contenthash].bundle.js',
+        path: __dirname + '/docs'
     },
     mode: 'production',  
     plugins: [ 
